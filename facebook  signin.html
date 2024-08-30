@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+      }
+      body {
+        background-color: rgb(245, 242, 242);
+      }
+      .container {
+        width: 460px;
+        margin: 0 auto;
+        height: 150vh;
+      }
+      form {
+        width: 100%;
+        padding: 20px;
+      }
+      .fb-img {
+        width: 300px;
+        margin: 0 auto;
+      }
+      .fb-img img {
+        width: 100%;
+      }
+      .form-container {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: #ffff;
+        border-radius: 5px;
+      }
+      
+      .header {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        padding: 20px 0;
+      }
+      .header h2 {
+        margin-bottom: 5px;
+      }
+      .header p {
+        color: gray;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      #first-name {
+        float: right;
+      }
+      .name {
+        display: flex;
+        justify-content: space-between;
+      }
+      .name div {
+        width: 205px;
+      }
+      .form-group input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid lightgray;
+      }
+      .form-group input:focus {
+        outline: none;
+      }
+      .form-group input::placeholder {
+        font-size: 16px;
+      }
+      .dob {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .dob select {
+        width: 135px;
+        padding: 10px;
+      }
+      .gender {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .radio-btn {
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 10px 7px;
+      }
+      .radio-btn label {
+        width: 100px;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: normal;
+      }
+      .radio-btn input {
+        width: 15px;
+      }
+      form p {
+        font-size: 11px;
+        color: gray;
+        margin-bottom: 5px;
+      }
+      .link p {
+        margin: 11px 0;
+        font-size: 11px;
+        line-height: 1.5;
+      }
+      button {
+        background-color: rgb(3, 133, 3);
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+        padding: 10px;
+        border: none;
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+      button:hover {
+        color: rgb(210, 208, 208);
+      }
+      .foot {
+        text-align: center;
+        margin: 20px 0;
+      }
+      .foot a {
+        color: rgb(45, 45, 235);
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="fb-img">
+        <img
+          src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg"
+          alt=""
+        />
+      </div>
+      <div class="form-container">
+        <div class="header">
+          <h2>Create a new account</h2>
+          <p>It's quick and easy.</p>
+        </div>
+        <form>
+          <div class="name">
+            <div class="form-group">
+              <label for="first-name"></label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                required
+                placeholder="First Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="surname"></label>
+              <input
+                type="text"
+                id="surname"
+                name="surname"
+                placeholder="Surname"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email"></label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              required
+              placeholder="Mobile number or email address"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password"></label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              placeholder="New password"
+            />
+          </div>
+          <p>Date of birth</p>
+          <div class="form-group dob">
+            <select id="day" name="day">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+            </select>
+            <select id="month" name="month">
+              <option value="jan">January</option>
+              <option value="feb">February</option>
+              <option value="march">March</option>
+              <option value="April">April</option>
+              <option value="may">May</option>
+              <option value="jun">June</option>
+              <option value="july">July</option>
+              <option value="aug">August</option>
+              <option value="sep">September</option>
+              <option value="oct">October</option>
+              <option value="Nov">November</option>
+              <option value="dec">December</option>
+            </select>
+            <select id="year" name="year">
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="">2022</option>
+              <option value="">2021</option>
+              <option value="">2020</option>
+              <option value="">2019</option>
+              <option value="">2018</option>
+              <option value="">2017</option>
+              <option value="">2016</option>
+              <option value="">2015</option>
+            </select>
+          </div>
+          <p>Gender</p>
+          <div class="form-group gender">
+            <div class="radio-btn">
+              <label for="female">Female</label>
+              <input type="radio" id="female" name="gender" value="female" />
+            </div>
+            <div class="radio-btn">
+              <label for="male">Male</label>
+              <input type="radio" id="male" name="gender" value="male" />
+            </div>
+            <div class="radio-btn">
+              <label for="custom">Custom</label>
+              <input type="radio" id="custom" name="gender" value="custom" />
+            </div>
+          </div>
+          <div class="link">
+            <p>
+              People who use our service may have uploaded your contact
+              information to Facebook. <a href="">Learn more.</a>
+            </p>
+
+            <p>
+              By clicking Sign Up, you agree to our <a href="">Terms, </a
+              ><a href="">Privacy Policy</a> and <a href="">Cookies Policy</a> .
+              <br />You may receive SMS notifications from us and can opt out at
+              any time.
+            </p>
+          </div>
+          <button type="submit">Sign Up</button>
+          <div class="foot">
+            <a href="http://127.0.0.1:5500/facbooklogin.html">Already have an account?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
